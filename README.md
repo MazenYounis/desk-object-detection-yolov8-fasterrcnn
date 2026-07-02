@@ -338,6 +338,28 @@ The best YOLO model was YOLOv8n v3. It was trained on Dataset v3 with 120 source
 
 The results show that Dataset v3 produced the strongest YOLO model. Compared to v1, it improved all main test metrics. Compared to v2, it reduced the false positives that appeared after brightness augmentation.
 
+## Faster R-CNN Evaluation
+
+After training Faster R-CNN, an additional quantitative evaluation was performed on the same Dataset v3 test set.
+
+| Metric | Faster R-CNN |
+|---|---:|
+| mAP50-95 | 0.8379 |
+| mAP50 | 0.9952 |
+| mAP75 | 0.9952 |
+| mAR100 | 0.8480 |
+
+The Faster R-CNN model achieved a very high mAP50 score, which shows that it detected the objects very well at an IoU threshold of 0.50. However, YOLOv8n v3 achieved a higher mAP50-95 score, which is the stricter overall metric across multiple IoU thresholds.
+
+## Final Model Comparison
+
+| Model | mAP50 | mAP50-95 | Main Observation |
+|---|---:|---:|---|
+| YOLOv8n v3 | 0.9650 | 0.8700 | Best overall measured model and suitable for faster detection |
+| Faster R-CNN | 0.9952 | 0.8379 | Very strong at mAP50 and produced clean visual predictions |
+
+YOLOv8n v3 was selected as the best final model overall because it achieved the higher mAP50-95 score and is more suitable for efficient real-time detection. Faster R-CNN performed very well visually and achieved a slightly higher mAP50, but YOLOv8n v3 was stronger across the stricter mAP50-95 range.
+
 ## Result Graphs
 
 The following graphs visualize the most important quantitative results of the project.
@@ -503,6 +525,7 @@ desk-object-detection-yolo/
 │   ├── detect_raw_baseline.py
 │   ├── train_yolo.py
 │   ├── evaluate_model.py
+│   ├── evaluate_faster_rcnn.py
 │   ├── detect_fine_tuned.py
 │   ├── compare_models.py
 │   ├── generate_result_graphs.py
