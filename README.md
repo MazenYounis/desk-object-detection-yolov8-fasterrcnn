@@ -487,7 +487,7 @@ The poster includes:
 - visual prediction examples,
 - a final comparison and conclusion.
 
-![A1 Project Poster](./docs/poster/MS_Desk_Object_Detection_A1_Vertical_Poster.png)
+![A1 Project Poster](docs/poster/MS_Desk_Object_Detection_A1_Vertical_Poster_v2.png)
 
 The full poster PDF can be found here:
 
