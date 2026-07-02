@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# macOS files
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large model weights
+*.pt
+*.pth
+
+# Raw and processed datasets
+data/raw/
+data/raw_mert/
+data/processed/
+
+# Keep only the small demo test images if needed
+# data/test_images/ can stay included
+
+# Large training outputs
+results/fine_tuned/
+results/evaluation/
+results/faster_rcnn/
+results/baseline/
+results/comparison/
+
+# YOLO temporary runs
+runs/
