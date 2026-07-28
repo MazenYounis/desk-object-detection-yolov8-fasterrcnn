@@ -51,6 +51,10 @@ Two different object detection methods were implemented and compared:
 
 The complete workflow was implemented in this project. It includes image collection, manual annotation, dataset export, model training, model evaluation, visual prediction tests and a comparison between both methods.
 
+The original project proposal can be found here:
+
+[Open Project Idea PDF](./docs/project_idea/Projektidee_YOLO_FasterRCNN_Younis_Satici.pdf)
+
 # Project Goals
 
 The main goals of the project were:
